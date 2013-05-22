@@ -4,4 +4,7 @@ Supernova::Application.routes.draw do
 
   root to: "home#index"
 
+  resources :loan_applications, only: [:new, :create]
+  get "/apply" => "loan_applications#new"
+
 end

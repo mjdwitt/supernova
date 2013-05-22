@@ -1,0 +1,5 @@
+%h1 Apply for a Loan
+
+= form_for @loan_application, html: { id: "foobar" } do |f|
+  = f.text_field :ssn, placeholder: "XXX-XX-XXXX"
+  = f.submit
