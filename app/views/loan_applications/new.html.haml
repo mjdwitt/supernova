@@ -1,5 +1,25 @@
 %h1 Apply for a Loan
 
 = form_for @loan_application, html: { id: "foobar" } do |f|
-  = f.text_field :ssn, placeholder: "XXX-XX-XXXX"
+  .field
+    = f.label :ssn
+    = f.text_field :ssn, placeholder: "XXX-XX-XXXX"
+  .field
+    = f.label :loan_amount
+    = f.text_field :loan_amount
+  .field
+    = f.label :terms
+    = f.text_field :terms
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :postal_code
+    = f.text_field :postal_code
   = f.submit
